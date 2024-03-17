@@ -1,6 +1,6 @@
 export * from './homepage/project-showcase'
 export * from './ui/background-gradient'
-export * from './ui/navigation-bar'
+export * from './navigation-bar'
 export * from './ui/tracing-beam'
 export * from './ui/button'
 export * from './homepage/home'
