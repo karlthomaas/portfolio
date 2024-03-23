@@ -1,5 +1,4 @@
-import { NavigationBar, TracingBeam, HomeSection, AboutSection } from './components';
-import { ProjectsSection } from './components/homepage/projects';
+import { NavigationBar, TracingBeam, HomeSection, AboutSection, ContactMe, ProjectsSection } from './components';
 
 export default function App() {
   return (
@@ -9,6 +8,7 @@ export default function App() {
         <HomeSection />
         <AboutSection />
         <ProjectsSection />  
+        <ContactMe />
       </TracingBeam>
     </>
   );
