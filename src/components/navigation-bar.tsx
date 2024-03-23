@@ -1,41 +1,39 @@
-import { HomeLayoutWrapper } from '.';
 import { useEffect, useState } from 'react';
-import { cn } from '@/lib/utils';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export const NavigationBar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const controlNavbar = () => {
-    setLastScrollY(window.scrollY);
-    console.log(window.scrollY, lastScrollY);
-
-    if (window.scrollY < 100 || window.scrollY < lastScrollY) {
-      setShowNavbar(true)
-    } else  {
-      setShowNavbar(false);
-    }
-  };
-
   useEffect(() => {
+    const controlNavbar = () => {
+      setLastScrollY(window.scrollY);
+      if (window.scrollY < 100 || window.scrollY < lastScrollY) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+    };
+
     window.addEventListener('scroll', controlNavbar);
     return () => window.removeEventListener('scroll', controlNavbar);
   }, [lastScrollY]);
 
-  if (showNavbar) {
-    return (
-      <HomeLayoutWrapper
-        tag='nav'
-        className='border-1 fixed top-5 z-20 flex w-full h- justify-center rounded-2xl border border-primary p-2 h-max -translate-x-1/2 left-1/2'
-      >
-        <ul className='flex justify-evenly space-x-5 font-medium'>
-          <li>Home</li>
-          <li>About me</li>
-          <li>Experience</li>
-          <li>Projects</li>
-          <li>Contact</li>
+  return (
+    <motion.nav key='navbar' initial={{ y: -100 }} exit={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
+      <div className='border-1 fixed left-1/2 top-5 z-20 flex h-[50px] w-full max-w-screen-lg -translate-x-1/2 items-center justify-center rounded-2xl border border-primary p-2 backdrop-blur-md'>
+        <ul className='flex justify-evenly space-x-10 font-medium'>
+          <NavbarElement name='Home' />
+          <NavbarElement name='About me' />
+          <NavbarElement name='Experience' />
+          <NavbarElement name='Projects' />
+          <NavbarElement name='Contact' />
         </ul>
-      </HomeLayoutWrapper>
-    );
-  }
+      </div>
+    </motion.nav>
+  );
 };
+
+const NavbarElement = ({ name }: { name: string }) => {
+  return <li className='hidden sm:block'>{name}</li>;
+}
