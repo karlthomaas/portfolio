@@ -52,8 +52,11 @@
 
  
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply dark bg-background text-foreground;
+    @apply dark bg-background text-foreground scroll-smooth antialiased;
     font-feature-settings:
       'rlig' 1,
       'calt' 1;

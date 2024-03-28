@@ -2,9 +2,12 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BackgroundGradient } from '..';
 import { HomeLayoutWrapper } from './wrapper';
 
+import NextJs from '/icons/nextjs-icon.svg';
+import Tailwind from '/icons/tailwindcss-icon.svg';
+
 export const HomeSection = () => {
   return (
-    <HomeLayoutWrapper tag='section'>
+    <HomeLayoutWrapper id="home" tag='section'>
       <div className='h-[calc(100vh-16px)] text-foreground'>
         <div className='flex h-max w-full flex-col pt-[200px] sm:flex-row sm:justify-between'>
           <div className='my-auto'>
@@ -24,7 +27,9 @@ export const HomeSection = () => {
         <div className='mt-10 flex items-center space-x-4 text-xl'>
           <h3>Favorite stack</h3>
           <span className='h-[28px] w-[2px] bg-white' />
-          <div></div>
+          <img src={NextJs} className='aspect-square w-[40px]' />
+          {/* <img src={Typescript} className='aspect-square w-[35px]' /> */}
+          <img src={Tailwind} className='aspect-square w-[40px]' />
         </div>
       </div>
     </HomeLayoutWrapper>
