@@ -1,22 +1,22 @@
-import { TracingBeam, HomeSection, AboutSection, ContactMe, ProjectsSection, FloatingNav } from './components';
+import { HomeSection, AboutSection, ContactMe, ProjectsSection, FloatingNav, Footer } from './components';
+import { Home, User, BriefcaseIcon, Phone } from 'lucide-react';
 
 export default function App() {
   return (
     <>
       <FloatingNav navItems={
         [
-          { name: 'Home', link: '#home' },
-          { name: 'About', link: '#about' },
-          { name: 'Projects', link: '#projects' },
-          { name: 'Contact', link: '#contact' },
+          { name: 'Home', link: '#home', icon: <Home size={24} />},
+          { name: 'About', link: '#about', icon: <User size={24} />},
+          { name: 'Projects', link: '#projects', icon: <BriefcaseIcon size={24} />},
+          { name: 'Contact', link: '#contact', icon: <Phone size={24} />},
         ]
       } />
-      <TracingBeam className='w-full h-full'>
         <HomeSection />
         <AboutSection />
         <ProjectsSection />  
         <ContactMe />
-      </TracingBeam>
+        <Footer />
     </>
   );
 }
