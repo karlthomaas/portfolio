@@ -7,8 +7,11 @@ interface HomeLayoutWrapperProps {
   id?: string;
   tag?: 'div' | 'section' | 'footer' | 'nav';
 }
-export const HomeLayoutWrapper: React.FC<HomeLayoutWrapperProps> = ({ children, className, id='', tag = 'div' }) => {
+export const HomeLayoutWrapper: React.FC<HomeLayoutWrapperProps> = ({ children, className, id = '', tag = 'div' }) => {
   const Tag = tag;
-  return <Tag id={id} className={clsx('mx-auto h-full w-full max-w-screen-lg p-4', className)}>{children}</Tag>;
-
+  return (
+    <Tag id={id} className={clsx('mx-auto h-full w-full max-w-screen-lg p-4', className)}>
+      {children}
+    </Tag>
+  );
 };

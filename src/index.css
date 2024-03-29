@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
 @layer base {
   :root {
@@ -50,13 +49,12 @@
   }
 }
 
- 
 @layer base {
   html {
     @apply scroll-smooth;
   }
   body {
-    @apply dark bg-background text-foreground scroll-smooth antialiased;
+    @apply dark scroll-smooth bg-background text-foreground antialiased;
     font-feature-settings:
       'rlig' 1,
       'calt' 1;

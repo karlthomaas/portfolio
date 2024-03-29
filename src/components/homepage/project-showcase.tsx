@@ -40,7 +40,7 @@ export const ProjectShowcase = ({
             <h1 className='pl-2 text-xl font-medium tracking-wide'>{name}</h1>
             {link && (
               <a className='order-first md:order-last' href={link} target='_blank'>
-                <Button className='my-auto' variant='ghost' size='sm'>
+                <Button aria-label='Open project link' className='my-auto' variant='ghost' size='sm'>
                   <ExternalLink />
                 </Button>
               </a>
@@ -66,6 +66,7 @@ export const ProjectShowcase = ({
       </div>
       <div className='my-auto md:hidden'>
         <Button
+          aria-label='Read more'
           size='icon'
           variant='ghost'
           onClick={() => {

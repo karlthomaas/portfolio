@@ -27,11 +27,11 @@ export const ProjectsSection = () => {
             description='Surveillance equipment e-commerce store. For this project I used headless Shopify with NextJS, because that allowed me to
             create more faster and flexible website for the client.'
             stack={[
-              <StackIcon src={NextJs} className='w-[40px]' />,
-              <StackIcon src={Typescript} className='w-[33px]' />,
-              <StackIcon src={GraphQL} />,
-              <StackIcon src={Shopify} />,
-              <StackIcon src={Tailwind} />,
+              <StackIcon alt='NextJS' src={NextJs} className='w-[40px]' />,
+              <StackIcon alt='Typescript' src={Typescript} className='w-[33px]' />,
+              <StackIcon alt='GraphQL' src={GraphQL} />,
+              <StackIcon alt='Shopify' src={Shopify} />,
+              <StackIcon alt='Tailwindcss' src={Tailwind} />,
             ]}
             activeProject={activeProject}
             setActiveProject={setActiveProject}
@@ -43,11 +43,11 @@ export const ProjectsSection = () => {
             description='School project where we had to build Social media platform. For frontend we used NextJs and for backend we used Go and everything 
             is containerized with Docker.'
             stack={[
-              <StackIcon src={NextJs} className='w-[40px]' />,
-              <StackIcon src={Typescript} className='w-[33px]' />,
-              <StackIcon src={Go} />,
-              <StackIcon src={Docker} />,
-              <StackIcon src={Tailwind} />,
+              <StackIcon alt='NextJS' src={NextJs} className='w-[40px]' />,
+              <StackIcon alt='Typescript' src={Typescript} className='w-[33px]' />,
+              <StackIcon alt='Golang' src={Go} />,
+              <StackIcon alt='Docker' src={Docker} />,
+              <StackIcon alt='Tailwindcss' src={Tailwind} />,
             ]}
             activeProject={activeProject}
             setActiveProject={setActiveProject}
@@ -57,7 +57,7 @@ export const ProjectsSection = () => {
             id='kettad'
             name='Kettad'
             description='Discgolf discs website. Users can find discs by name or characteristics. Every disc contains detailed information and flying trajectory'
-            stack={[<StackIcon src={Astro} className='w-[30px]'/>, <StackIcon src={Tailwind} />]}
+            stack={[<StackIcon alt='Astro' src={Astro} className='w-[30px]' />, <StackIcon alt='Tailwindcss' src={Tailwind} />]}
             activeProject={activeProject}
             setActiveProject={setActiveProject}
             link='https://github.com/karlthomaas/Kalev-Discord-Bot'
@@ -66,7 +66,7 @@ export const ProjectsSection = () => {
             id='kalevi_bot'
             name='Kalevi bot'
             description='Discord bot for Estonian communities. Has many features like listening to music, search wikipedia, and more.'
-            stack={[<StackIcon src={Python} />, <StackIcon src={Discord} />]}
+            stack={[<StackIcon alt='Python' src={Python} />, <StackIcon alt='Disnake' src={Discord} />]}
             activeProject={activeProject}
             setActiveProject={setActiveProject}
             link='https://github.com/karlthomaas/Kalev-Discord-Bot'
@@ -77,6 +77,6 @@ export const ProjectsSection = () => {
   );
 };
 
-const StackIcon = ({ src, className }: { src: string; className?: string }) => {
-  return <img src={src} className={cn('aspect-square w-[35px] transition-transform duration-200 hover:scale-105', className)} />;
+const StackIcon = ({ src, alt, className }: { src: string; alt: string; className?: string }) => {
+  return <img src={src} alt={alt} className={cn('aspect-square w-[35px] transition-transform duration-200 hover:scale-105', className)} />;
 };

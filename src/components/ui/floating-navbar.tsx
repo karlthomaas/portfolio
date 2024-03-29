@@ -50,7 +50,7 @@ export const FloatingNav = ({ navItems, className }: { navItems: navItem[]; clas
           duration: 0.2,
         }}
         className={cn(
-          'fixed inset-x-4 top-6 z-[5000] mx-auto flex w-auto  max-w-screen-lg items-center justify-evenly rounded-xl border border-border px-8 py-2 sm:py-4  backdrop-blur-md dark:border-white/[0.9]',
+          'fixed inset-x-4 top-6 z-[5000] mx-auto flex w-auto  max-w-screen-lg items-center justify-evenly rounded-xl border border-border px-8 py-2 backdrop-blur-md  dark:border-white/[0.9] sm:py-4',
           className
         )}
       >
@@ -62,7 +62,7 @@ export const FloatingNav = ({ navItems, className }: { navItems: navItem[]; clas
               'relative flex items-center space-x-1 text-xl text-foreground hover:text-neutral-500 dark:text-neutral-50 dark:hover:text-neutral-300'
             )}
           >
-            <Button variant='ghost' size='icon' className='flex items-center justify-center sm:hidden '>
+            <Button aria-label={navItem.name} variant='ghost' size='icon' className='flex items-center justify-center sm:hidden '>
               {navItem.icon}
             </Button>
             <span className='hidden sm:block  sm:text-lg'>{navItem.name}</span>
