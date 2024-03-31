@@ -16,7 +16,7 @@ export const AboutSection = () => {
             <br />
             <br />
             My journey started with taking Python courses in High school. As I delved deeper into Python, I discovered its potential
-            and started creating discord bots and web automation for fun. My passion for programming opened the doors for{' '}
+            and started creating Discord bots and web automation for fun. My passion for programming opened the doors for{' '}
             <span className='text-primary'>freelancing opportunities</span>.
             <br />
             <br />
