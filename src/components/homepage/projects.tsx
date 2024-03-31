@@ -17,8 +17,8 @@ export const ProjectsSection = () => {
   const [activeProject, setActiveProject] = useState<string | null>(null);
 
   return (
-    <div className='mb-24'>
-      <HomeLayoutWrapper tag='section' id='projects' className='mb-10 mt-10'>
+    <div className='mb-24' id="projects">
+      <HomeLayoutWrapper tag='section' className='mb-10 mt-10'>
         <h1 className='mb-4 mt-10 text-2xl font-medium'>My Projects</h1>
         <section className='grid grid-cols-1 gap-5 md:grid-cols-2'>
           <ProjectShowcase

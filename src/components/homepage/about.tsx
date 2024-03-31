@@ -1,8 +1,8 @@
 import { HomeLayoutWrapper } from '..';
 export const AboutSection = () => {
   return (
-    <div className='mb-10 h-full w-full bg-[#080f1e]  py-24'>
-      <HomeLayoutWrapper tag='section' id='about' className='flex md:space-x-10'>
+    <div id="about" className='mb-10 h-full w-full bg-[#080f1e]  py-24'>
+      <HomeLayoutWrapper tag='section' className='flex md:space-x-10'>
         <img
           alt='About us section photo'
           src='/images/programming.webp'
