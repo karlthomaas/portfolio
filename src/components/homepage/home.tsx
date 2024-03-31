@@ -8,7 +8,7 @@ export const HomeSection = () => {
   return (
     <HomeLayoutWrapper id='home' tag='section'>
       <div className='h-[calc(100vh-16px)] text-foreground'>
-        <div className='flex h-max w-full flex-col items-center pt-[200px] sm:flex-row sm:justify-between'>
+        <div className='flex h-max w-full flex-col items-center pt-[100px] sm:pt-[200px] sm:flex-row sm:justify-between'>
           <div className='my-auto w-max'>
             <h2 className='text-center text-3xl text-foreground/90 sm:mt-1 sm:text-left md:text-4xl lg:text-5xl'>Full-Stack Developer</h2>
             <h3 className='mt-2 text-center text-lg sm:text-left md:text-xl lg:text-2xl'>Hey, I'm Karl-Thomas Zink from Estonia! </h3>
