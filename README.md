@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Karl-Thomas Zink's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the source code for Karl-Thomas Zink's portfolio website. The website showcases Karl-Thomas's skills and projects in web development.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- `src/`: The source code of the application.
+  - `App.tsx`: The main component of the application.
+  - `assets/`: Contains static assets used in the application.
+  - `components/`: Contains React components used in the application.
+  - `lib/`: Contains utility functions.
+- `public/`: Contains public assets like images and icons.
+- `index.html`: The main HTML file.
+- `package.json`: Defines the project's npm dependencies and scripts.
+- `vite.config.ts`: Configuration file for Vite.
 
-- Configure the top-level `parserOptions` property like this:
+## Available Scripts
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+In the project directory, you can run:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the application for production.
+- `npm run lint`: Lints the project using ESLint.
+- `npm run prettier`: Formats the code using Prettier.
+- `npm run preview`: Serves the production build of the application.
+
+## Visit the Website
+
+You can visit the live website at [https://karlthomas.ee/](https://karlthomas.ee/).
