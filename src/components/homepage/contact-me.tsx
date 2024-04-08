@@ -1,10 +1,10 @@
-import { HomeLayoutWrapper } from '..';
+import { HomeLayoutWrapper, Testimonials } from '..';
 import { Button } from '..';
 
 export const ContactMe = () => {
   return (
     <div className='mt-10 bg-gradient-to-r from-[#080f1e] to-[#0c162c] py-14' id="contact">
-      <HomeLayoutWrapper tag='section'>
+      <HomeLayoutWrapper tag='section' className='flex '>
         <div className='mx-auto my-auto flex h-max w-full flex-col justify-center space-y-5  rounded-xl p-5 text-foreground '>
           <h1 className='text-3xl sm:text-3xl'>Ready to collaborate?</h1>
           <p className='text-foreground/75 sm:text-lg'>
@@ -15,6 +15,9 @@ export const ContactMe = () => {
               Click to Connect
             </Button>
           </a>
+        </div>
+        <div className='hidden lg:block'>
+          <Testimonials />
         </div>
       </HomeLayoutWrapper>
     </div>
