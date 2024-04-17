@@ -15,9 +15,7 @@ export default function App() {
       <HomeSection />
       <AboutSection />
       <ProjectsSection />
-      <div className='lg:hidden'>
-        <Testimonials />
-      </div>
+      <Testimonials />
       <ContactMe />
       <Footer />
     </>
