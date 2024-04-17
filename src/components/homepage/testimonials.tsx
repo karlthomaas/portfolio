@@ -32,7 +32,7 @@ const CARDS = [
     id: 3,
     name: 'John Doe',
     link: 'https://www.upwork.com/freelancers/~01c12d0740ca19195f',
-    designation: 'Software Engineer',
+    designation: 'From Upwork',
     content: (
       <p className='sm:text-lg'>
         Karl-Thomas is <Highlight>Problem Solver and Excellent Programmer</Highlight>! He will be the developer if you are looking for
@@ -44,7 +44,7 @@ const CARDS = [
     id: 4,
     name: 'Casino Royal ',
     link: 'https://www.upwork.com/freelancers/~01c12d0740ca19195f',
-    designation: 'Software Engineer',
+    designation: 'From Upwork',
     content: (
       <p className='sm:text-xl'>
         I love the <Highlight>communication, skills, helpfulness, and quality</Highlight>. This guy is the real deal the quality of work
